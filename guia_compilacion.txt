@@ -1,0 +1,14 @@
+Crear proyecto para pico
+
+1. Crear carpeta del proyecto
+2. Clonar el sdk: git clone -b master https://github.com/raspberrypi/pico-sdk.git
+3. Actualizar (creo): git submodule update --init
+4. Nueva carpeta con lo que es el código y el cmake
+5. Crear el CMakeList.txt
+6. Añadir al proyecto el archivo pico_sdk_import.cmake
+7. Crear la carpeta build dentro de la que tiene el codigo
+8. Dentro de build hacer export PICO_SDK_PATH=../../pico-sdk
+9. Ejecutar cmake .. dentro de build
+10. Por último make y listo
+
+
